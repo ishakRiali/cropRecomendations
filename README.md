@@ -1,6 +1,6 @@
 # Crop Recommendation System
 
-An intelligent crop recommendation system that uses multiple AI techniques including Fuzzy Logic, Ontologies, and Bayesian Networks to predict suitable crops based on soil characteristics.
+An intelligent crop recommendation system that uses multiple AI techniques including Fuzzy Logic, Ontologies, and Bayesian Networks to predict suitable crops.
 
 ## 🌱 Features
 
