@@ -5,7 +5,7 @@ An intelligent crop recommendation system that uses multiple AI techniques inclu
 ## 🌱 Features
 
 - **Multi-technique AI approach**: Combines fuzzy logic, ontological reasoning, and Bayesian networks for accurate predictions
-- **Soil data management**: Add, modify, and manage soil sample data
+- **Data management**: Add, modify, and manage sample data
 - **Crop prediction**: Get crop recommendations based on soil parameters
 - **Inference system**: Reasoning engine for crop suitability analysis
 - **Validation**: K-Fold cross-validation for model accuracy assessment
