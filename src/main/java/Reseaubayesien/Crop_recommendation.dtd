@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/Crop_recommendation.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE smile SYSTEM "Crop_recommendation.dtd">
+
+    <smile>
+    ...
+    </smile>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT smile (nodes|extensions)*>
+<!ATTLIST smile
+    version CDATA #IMPLIED
+    id CDATA #IMPLIED
+    numsamples CDATA #IMPLIED
+    discsamples CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nodes (cpt)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT cpt (state|probabilities|parents)*>
+<!ATTLIST cpt
+    id CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT state EMPTY>
+<!ATTLIST state
+    id CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT probabilities (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT parents (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT extensions (genie)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT genie (node|textbox)*>
+<!ATTLIST genie
+    version CDATA #IMPLIED
+    app CDATA #IMPLIED
+    name CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT node (name|interior|outline|font|position|barchart)*>
+<!ATTLIST node
+    id CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT name (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT interior EMPTY>
+<!ATTLIST interior
+    color CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT outline EMPTY>
+<!ATTLIST outline
+    color CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT font EMPTY>
+<!ATTLIST font
+    color CDATA #IMPLIED
+    name CDATA #IMPLIED
+    size CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT position (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT barchart EMPTY>
+<!ATTLIST barchart
+    active CDATA #IMPLIED
+    width CDATA #IMPLIED
+    height CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT textbox (caption|font|position)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT caption (#PCDATA)>
