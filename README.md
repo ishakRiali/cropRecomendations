@@ -93,7 +93,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Ishak Riali, Messaouda Fareh, Youcef Benkessirat, Aymen Zebayri
 
 ## 🙏 Acknowledgments
 
